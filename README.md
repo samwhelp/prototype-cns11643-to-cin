@@ -1,5 +1,16 @@
 # prototype-cns11643-to-cin
 
+
+## 特別聲明
+
+這個Script產生出來的對照是錯誤的，
+因為我還沒弄懂，怎麼將CNS編碼轉成Unicode字串。
+所以得出來的結果是錯的。
+
+盼各位海涵 Orz...
+
+尚在研究中....
+
 ## 緣起
 
 這個專案只是因應「[這篇討論](http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=346876#forumpost346876)」，簡單寫出來的轉換程式，
@@ -37,7 +48,7 @@ $ php cin.php
 下載指令。
 
 ``` sh
-$ wget -c http://data.gov.tw/iisi/logaccess/20?dataUrl=http://www.cns11643.gov.tw/AIDB/Open_Data.zip&ndctype=TXT&ndcnid=5961
+$ wget -c "http://data.gov.tw/iisi/logaccess/20?dataUrl=http://www.cns11643.gov.tw/AIDB/Open_Data.zip&ndctype=TXT&ndcnid=5961" -O Open_Data.zip
 ```
 
 其餘參考「[這篇討論串](http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=326994#forumpost326994)」。
