@@ -60,13 +60,14 @@ class CnsPhonetic extends \Cns\Base\Object {
 	protected function load()
 	{
 		$rtn = array();
-		$list = file(The_Cns_Phonetic_File_Path); //http://php.net/manual/en/function.file.php
 
 		$container = $this->getContainer();
 		$util = $container->getUtil();
 		$cns2uni = $container->getCns2Uni();
 		$phonetic = $container->getPhonetic();
 
+		// CNS對照表。
+		$list = file(The_Cns_Phonetic_File_Path); //http://php.net/manual/en/function.file.php
 		foreach ($list as $index => $line) {
 
 			$col = $util->findCol($line);
@@ -88,7 +89,21 @@ class CnsPhonetic extends \Cns\Base\Object {
 
 		}
 
-		ksort($rtn); // http://php.net/manual/en/function.ksort.php
+		// 注音符號。
+		$list = $phonetic->getMap();
+		foreach($list as $val => $key) {
+			if (!array_key_exists($key, $rtn)) {
+				$rtn[$key] = array();
+			}
+
+			$item = array();
+			$item['key'] = $key;
+			$item['val'] = $val;
+
+			$rtn[$key][] = $item;
+		}
+
+		ksort($rtn); // 依照「Key」排序。
 
 		$this->_Pool = $rtn;
 
