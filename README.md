@@ -29,7 +29,7 @@ $ cd prototype-cns11643-to-cin
 
 ## 使用方式
 
-### 轉換cin檔
+### 轉換產生cin檔
 
 切換資料夾
 
@@ -50,6 +50,8 @@ $ php cin.php
 ```
 
 就會產生「prototype-cns11643-to-cin/var/CnsPhonetic.cin」這個檔。
+
+注意: 此轉換的過程，除了轉換CNS的對照表之外，還加入了「注音符號」。
 
 ### 批次轉換Unicode碼，變成文字。
 
