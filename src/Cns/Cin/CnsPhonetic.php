@@ -88,6 +88,8 @@ class CnsPhonetic extends \Cns\Base\Object {
 
 		}
 
+		ksort($rtn); // http://php.net/manual/en/function.ksort.php
+
 		$this->_Pool = $rtn;
 
 		//return $rtn;
