@@ -1,9 +1,5 @@
 # prototype-cns11643-to-cin
 
-## 注意
-
-(2016-09-14): 驗證發現有一個地方有Bug，待修正。
-
 ## 緣起
 
 這個專案只是因應「[這篇討論](http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=346876#forumpost346876)」，簡單寫出來的轉換程式，
