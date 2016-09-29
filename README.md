@@ -90,3 +90,11 @@ $ wget -c "http://data.gov.tw/iisi/logaccess/20?dataUrl=http://www.cns11643.gov.
 ```
 
 其餘參考「[這篇討論串](http://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=326994#forumpost326994)」。
+
+
+## 相關專案
+
+* [CinConvert](https://github.com/samwhelp/CinConvert)
+* [util-cns11643-to-cin-nodejs](https://github.com/samwhelp/util-cns11643-to-cin-nodejs)
+* [util-cns11643-to-cin-gjs](https://github.com/samwhelp/util-cns11643-to-cin-gjs)
+* [util-cns11643-to-cin-php](https://github.com/samwhelp/util-cns11643-to-cin-php)
